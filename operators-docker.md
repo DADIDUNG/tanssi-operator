@@ -60,7 +60,8 @@ docker run --network="host" -v "/var/lib/tanssi-data:/data" \
 To spin up your node, you must run the Docker image with the `docker run` command. 
 
 Replace `INSERT_YOUR_TANSSI_NODE_NAME` with a human-readable name and set `YOUR_IP_ADDRESS` with your public IP address.
-```docker run --name tanssi -d -p 9944:9944 -p 30333:30333 -v "/var/lib/tanssi-data:/data" \
+```
+docker run --name tanssi -d -p 9944:9944 -p 30333:30333 -v "/var/lib/tanssi-data:/data" \
 -u $(id -u ${USER}):$(id -g ${USER}) \
 --entrypoint "/chain-network/tanssi-relay" \
 moondancelabs/dancelight-chain:3 \
