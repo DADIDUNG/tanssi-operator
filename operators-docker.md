@@ -208,4 +208,5 @@ When the syncing process is finished, your node is ready for the next steps.
 ✅ Click “Write”, confirm in MetaMask
 
 🎉 Done! You’re opted in and have deposited collateral to the Vault for Tanssi (Sepolia testnet).
---------------------------------------------------FINISH RUN TANSSI OPERATOR TESTNET--------------------------------------------------------------------
+
+--------------------------------------------FINISH RUN TANSSI OPERATOR TESTNET-----------------------------------------------
