@@ -5,15 +5,15 @@ icon: simple-docker
 
 # Run an Operator in Tanssi Using Docker
 
-## Introduction {: #introduction }
+## Introduction 
 
 In this guide, you'll learn how to spin up a Tanssi operator using the official image release with [Docker](https://www.docker.com){target=\_blank} on Linux systems.
 
-## Checking Prerequisites {: #checking-prerequisites }
+## Checking Prerequisites 
 
 --8<-- 'text/node-operators/installing-docker.md'
 
-### Pull the Docker Image {: #pull-docker-image }
+### Pull the Docker Image 
 
 A Docker image is built and published in every release, containing all the necessary dependencies a Tanssi operator requires and the binary file itself.
 
@@ -25,7 +25,7 @@ The following command to pull the Docker image:
 docker pull moondancelabs/dancelight-chain:3
 ```
 
-### Set Up the Data Directory {: #set-up-data-directory }
+### Set Up the Data Directory 
 
 Running an operator requires syncing with the Tanssi chain and storing its state.
 
@@ -50,7 +50,7 @@ sudo chown -R $(id -u):$(id -g) /var/lib/tanssi-data
 !!! note
     The directory is a parameter in the Docker start-up command. If you decide to create the directory elsewhere, update the command accordingly.
 
-### Generate the Node Key {: #generate-node-key }
+### Generate the Node Key 
 
 To generate and store on disk the session keys that will be referenced on the start-up command, run the following command:
 
@@ -60,8 +60,7 @@ docker run --network="host" -v "/var/lib/tanssi-data:/data" \
 {{ networks.dancelight.operator_docker_image }} key generate-node-key --file /data/node-key
 ```
 
-## Start Your Node {: #start-your-node }
-
+## Start Your Node 
 To spin up your node, you must run the Docker image with the `docker run` command. 
 
 Replace `INSERT_YOUR_TANSSI_NODE_NAME` with a human-readable name and set `YOUR_IP_ADDRESS` with your public IP address.
@@ -86,7 +85,7 @@ moondancelabs/dancelight-chain:3 \
 --validator
 docker update --restart=unless-stopped tanssi
 ```
-## Syncing Your Node {: #syncing-your-node }
+## Syncing Your Node 
 
 The first time your node spins up, the syncing process displays lots of log information from the node configuration and the chain blocks being synced. Some errors are expected to be displayed at the beginning of the process, disappearing once the chain gets synced to the last block.
 
