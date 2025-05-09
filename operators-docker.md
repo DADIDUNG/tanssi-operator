@@ -88,7 +88,6 @@ moondancelabs/dancelight-chain:3 \
 --validator
 docker update --restart=unless-stopped tanssi
 ```
-
 ## Syncing Your Node {: #syncing-your-node }
 
 The first time your node spins up, the syncing process displays lots of log information from the node configuration and the chain blocks being synced. Some errors are expected to be displayed at the beginning of the process, disappearing once the chain gets synced to the last block.
@@ -103,8 +102,9 @@ When the syncing process is finished, your node is ready for the next steps.
     "id":1,
     "method":"author_rotateKeys",
     "params": []
-  }'```
-Copy the "result" hex string. ✅ Map keys to your account:
+  }'
+```
+##Copy the "result" hex string. ✅ Map keys to your account:
 ![111](https://github.com/user-attachments/assets/10463f28-02f4-4164-b56c-25cf5e312882)
 1. Go to https://polkadot.js.org/apps/?rpc=wss://dancelight.tanssi-api.network#/extrinsics
 2. Navigate to Developer → Extrinsics
