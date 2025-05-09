@@ -9,10 +9,6 @@ icon: simple-docker
 
 In this guide, you'll learn how to spin up a Tanssi operator using the official image release with [Docker](https://www.docker.com){target=\_blank} on Linux systems.
 
-## Checking Prerequisites 
-
---8<-- 'text/node-operators/installing-docker.md'
-
 ### Pull the Docker Image 
 
 A Docker image is built and published in every release, containing all the necessary dependencies a Tanssi operator requires and the binary file itself.
