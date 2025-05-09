@@ -89,7 +89,8 @@ The first time your node spins up, the syncing process displays lots of log info
 When the syncing process is finished, your node is ready for the next steps.
 ## Setup Account & Map Session Keys
 ✅ Generate session keys:
-```curl http://127.0.0.1:9944 -H \
+```
+curl http://127.0.0.1:9944 -H \
 "Content-Type:application/json;charset=utf-8" -d \
   '{
     "jsonrpc":"2.0",
