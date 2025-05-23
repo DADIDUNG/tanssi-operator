@@ -39,7 +39,8 @@ docker update --restart=unless-stopped tanssi
 
 #Generate new session key
 
-```curl http://127.0.0.1:9944 -H \
+```
+curl http://127.0.0.1:9944 -H \
 "Content-Type:application/json;charset=utf-8" -d \
   '{
     "jsonrpc":"2.0",
