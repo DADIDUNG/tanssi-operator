@@ -1,8 +1,9 @@
-UPDATE TO VERSION 0.13.0
+#UPDATE TO VERSION 0.13.0
 
 #STOP NODE
-```	sudo docker stop tanssi
-	sudo docker rm tanssi
+```
+sudo docker stop tanssi
+sudo docker rm tanssi
 ```
 
 #PULL new docker images
