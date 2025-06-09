@@ -15,6 +15,9 @@ docker pull moondancelabs/dancelight-chain:5
 ```
 export NODENAME=NODENAME
 export VPSIP="wget -qO- eth0.me"
+```
+#RUN TANSSI DOCKER:
+```
 docker run --name tanssi --network="host" -v "/var/lib/tanssi-data:/data" \
 -u $(id -u ${USER}):$(id -g ${USER}) \
 --entrypoint "/chain-network/tanssi-relay" \
