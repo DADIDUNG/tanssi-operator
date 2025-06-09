@@ -11,7 +11,7 @@ sudo docker rm tanssi
 docker pull moondancelabs/dancelight-chain:5
 ```
 
-#RUN TANSSI NEW VERSION
+#SET NODENAME & IP VPS
 ```
 export NODENAME=NODENAME
 export VPSIP="wget -qO- eth0.me"
