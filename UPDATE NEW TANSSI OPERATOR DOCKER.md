@@ -8,7 +8,7 @@ sudo docker rm tanssi
 
 #PULL new docker images
 ```
-docker pull moondancelabs/dancelight-chain:4
+docker pull moondancelabs/dancelight-chain:5
 ```
 
 #RUN TANSSI NEW VERSION
@@ -18,7 +18,7 @@ export VPSIP="wget -qO- eth0.me"
 docker run --name tanssi --network="host" -v "/var/lib/tanssi-data:/data" \
 -u $(id -u ${USER}):$(id -g ${USER}) \
 --entrypoint "/chain-network/tanssi-relay" \
-moondancelabs/dancelight-chain:4 \
+moondancelabs/dancelight-chain:5 \
 --chain=dancelight \
 --base-path=/data/ \
 --unsafe-force-node-key-generation \
